@@ -11,22 +11,21 @@ ul li a{
 }
 
 /* custom Classes */
-.logo{
+.navlinks{
+     display: flex;
+     justify-content: end;
+}
+.links{
+     padding: 0 20px;
+}
+.logo img{
      width: 150;
      max-width: 180px;
 }
-.links{
-     padding: 0 2rem;
-}
-
 
 
 /* MEDIA QUERY */
 /* html elements */
-
-
-
-
 /* custom Classes */
 @media (max-width: 1250px) {
   .links{

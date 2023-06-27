@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import Navbar from "./Navbar"
+import Navbar from "./navbar"
+import Content from "./content"
 
 
 export default class Main extends Component {
@@ -7,7 +8,11 @@ export default class Main extends Component {
     return (
       <div>
         <Navbar/>
-        Main
+        <Content/>
+        <div>Content</div>
+        <div>&nbsp;</div>
+        <div>Footer</div>
+        <div>&nbsp;</div>
       </div>
     )
   }
