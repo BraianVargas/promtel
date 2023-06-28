@@ -1,6 +1,8 @@
 /* elementos html */
 nav{
-     background-color: rgba(var(--color1), .8)
+     padding: .5em;
+     height: 100px;
+     background-color: rgba(var(--color1), .2);
 }
 ul li{
      list-style: none;
@@ -22,13 +24,42 @@ ul li a{
      width: 150;
      max-width: 180px;
 }
+.scrolled{
+     transition: all .5s ease-in;
+     height: 80px;
+     width: 100%;
+     padding: .5em;
+     position: fixed;
+     background-color: rgba(var(--color1), .8);
+
+}
 
 
 /* MEDIA QUERY */
 /* html elements */
 /* custom Classes */
+@media (max-width: 600px) {
+     nav{
+          transition: all .5s ease-in;
+          height: auto;
+          z-index: 10;
+          width: 100%;
+          padding: .5em;
+          position: fixed;
+          background-color: rgba(var(--color1), .8);
+     }
+     nav .logo img{
+          width: 100;
+          left: 0;
+     }
+}
+
 @media (max-width: 1250px) {
-  .links{
-     padding: 50px 0;
-  }
+     
+     .links{
+          padding: 50px 0;
+     }
+     .scrolled{
+          height: auto;
+     }
 }

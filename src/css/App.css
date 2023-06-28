@@ -3,7 +3,7 @@
   --color2 : #15284d;
   --color3 : #435aa0;
   --color4 : #8192fe;
-  --color5 : #cfceff;
+  --color5 : #f0f0ff;
   --color6 : #112437;
   --color7 : #0d4d6a;
   --color8 : #0986a9;
@@ -13,4 +13,8 @@
 
 * {
   color: white;
+}
+
+body{
+  background-color: var(--color2);
 }

@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 
+import './index.css';
+import App from './App';
+import About from './components/about';
+import Contacts from './components/contacts';
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+  },
+  {
+    path: "/about",
+    element: <About/>,
+  },
+  {
+    path: "/contacts",
+    element: <Contacts/>,
   },
 ]);
 

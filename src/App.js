@@ -1,8 +1,12 @@
 import React from 'react';
-import Navbar from "./components/navbar"
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
-import "./App.css"
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
+import "./css/App.css"
+import Navbar from "./components/navbar"
+import Footer from './components/footer';
+
 
 const styles = {
   main: {
@@ -14,9 +18,41 @@ export default function Root() {
   return (
     <>
       <Navbar/>
-      <div id="detail">
-        
+      <div>
+        Main Content
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
       </div>
+      <Footer/>
     </>
   );
 }
