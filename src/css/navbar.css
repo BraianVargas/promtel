@@ -1,5 +1,6 @@
 /* elementos html */
 nav{
+     z-index: 1;
      padding: .5em;
      height: 100px;
      background-color: rgba(var(--color1), .2);
