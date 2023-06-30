@@ -26,7 +26,7 @@ const socials = [
   },
 ]
 const iconList = socials.map((social) =>
-  <li id={social.id} className={social.iconName}>
+  <li id={social.id} className={social.iconName} key={social.id}>
     <a href={social.link} target='_blank'>
       <i className={social.logoClass} />
     </a>
