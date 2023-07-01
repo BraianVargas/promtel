@@ -16,7 +16,7 @@ ul li a{
 /* custom Classes */
 .navlinks{
      display: flex;
-     justify-content: end;
+     justify-content: flex-end;
 }
 .links{
      padding: 0 20px;

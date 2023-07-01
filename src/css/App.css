@@ -1,3 +1,12 @@
+
+@font-face {
+  font-family: 'wght';
+  src: url('../fonts/wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'slab';
+  src: url('../fonts/alfaSlab.ttf') format('truetype');
+}
 :root{
   --color1 : 0,0,5;
   --color2 : #15284d;

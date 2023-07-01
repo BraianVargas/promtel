@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
-import img01 from "../img/home/tecnologia.png";
-import img02 from "../img/home/redes.webp";
-import img03 from "../img/home/construcciones.png";
-import img04 from "../img/home/fibra.png";
+import img01 from "../img/home/carousel/tecnologia.webp";
+import img02 from "../img/home/carousel/iot.webp";
+import img03 from "../img/home/carousel/construcciones.webp";
+import img04 from "../img/home/carousel/fibra.webp";
 
 import "../css/carousel.css"
 
@@ -12,13 +12,13 @@ const carouselData = [
           id : "01",
           imgSrc:img01,
           title: "Tecnología",
-          subtitle: "IOT y SOLUCIONES TECNOLÓGICAS EMPRESARIAL."
+          subtitle: "SOLUCIONES TECNOLÓGICAS PARA EMPRESAS"
      },
      {
           id : "02",
           imgSrc:img02,
-          title: "Cambiar",
-          subtitle: "Lorem ipsum"
+          title: "IOT",
+          subtitle: "INTERNET DE LAS COSAS APLICADO A TUS NECESIDADES"
      },
      {
           id : "03",
@@ -30,7 +30,7 @@ const carouselData = [
           id : "04",
           imgSrc:img04,
           title: "Fibra Óptica",
-          subtitle: "OBRAS DE CONEXION, SOLDADURA Y MÁS."
+          subtitle: "CONEXION, SOLDADURA Y ENLACES INALAMBRICOS."
      },
 ]
 
