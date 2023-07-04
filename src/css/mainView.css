@@ -1,53 +1,144 @@
 
-.carousel{
-     top:-100px;
-     height: 100vh;
+#main-view{
+     position: relative;
+     top: -100px;
+     height: 90vh;
 }
-.carousel-item img{
+#main-view .carousel-item img{
      height: 100vh;
-     filter: blur(2px) brightness(.5) contrast(105%);
+     filter: blur(2px) brightness(.5) contrast(105%) saturate(90%) ;
      object-fit: cover;
      object-position: center;
 }
 .carousel-caption{
      margin: auto;
-     top: 50vh;
+     top: 40vh;
 }
-h1{
-     font-family: "wght", sans-serif;
-     font-size: 80px;
+#main-view h1{
+     font-family: "slab", sans-serif;
+     font-size: 90px;
      font-weight: 1000;
+     letter-spacing: 3px;
+}
+
+
+
+/* animacion scroll down */
+.down{
+     position: absolute;
+     top: calc(100vh - 80px);
+     left: calc(50% - 20px);
+     transition: opacity 1s ease-in-out;
+     animation: fade 1.2s reverse;
+}
+.down.scrolled1{
+     animation: fade 1.2s ease-in-out;
+     transition: opacity 1s ease-in-out;
+     opacity: 0;
+}
+.ball1 {
+	background: #fff;
+	height: 8px;
+	width: 8px;
+	border-radius: 100%;
+     animation: jumpInfinite 1.2s infinite;
+     margin: auto;
+}
+.ball2 {
+	background: #fff;
+	height: 6px;
+	width: 6px;
+	border-radius: 100%;
+     animation: jumpInfinite 1.2s infinite;
+     margin: auto;
 
 }
+.ball3 {
+	background: #fff;
+	height: 4px;
+	width: 4px;
+	border-radius: 100%;
+     animation: jumpInfinite 1.2s infinite;
+     margin: auto;
+
+}
+.ball4 {
+	background: #fff;
+	height: 2px;
+	width: 2px;
+	border-radius: 100%;
+     animation: jumpInfinite 1.2s infinite;
+     margin: auto;
+
+}
+.spacer {
+	height: 4px;
+     animation: jumpInfinite 1.2s infinite;
+     margin: auto;
+
+}
+.arrow {
+	height: 20px;
+	width: 20px;
+	border: 0;
+	border-right: 4px solid #fff;
+	border-top: 4px solid #fff;
+	transform: translateY(-10px) rotate(135deg);
+     animation: jumpInfinite 1.2s infinite;
+     margin: auto;
+}
+
 /* -------------- MEDIA SCREEN ---------------- */
 @media (max-width: 600px) {
-     .carousel, .carousel-inner{
-          top: auto;
-          height: 240px;
-     }
-     .carousel-item{
+     #main-view{
           position: relative;
-          z-index: -10;
-          height: 500px;
-          max-height: 800px;
+          top: -120px;
+          height: 100vh;
      }
-     .carousel-caption{
-          top: 15vh;
+     #main-view .carousel-caption{
+          top: 35vh;
      }
-     .carousel-caption h1 {
-          font-size: 30px;
-          margin: auto;
+     #main-view h1{
+          font-family: "slab", sans-serif;
+          font-size: 50px;
+          font-weight: 500;
           text-align: center;
-          animation: all forwards 2s;
-          transition: all 1s;
+          letter-spacing: 3px;
      }
-     .carousel-caption p {
-          font-size: .6em;
+     #main-view h1{
           text-align: center;
-
      }
-     .carousel-caption {
-          bottom: 40vh !important;
-          text-align: center !important;
+     .down{
+          position: relative;
+          top: 190px;
+          left: calc(50% - 10px);
+          transition: opacity 1s ease-in-out;
+          animation: fade 1.2s reverse;
      }
 }
+
+
+
+
+@keyframes jumpInfinite {
+     0% {
+       margin-top: 0;
+     }
+     50% {
+       margin-top: 1px;
+     }
+     100% {
+       margin-top: 0;
+     }
+}
+@keyframes fade {
+     0% {
+       opacity: 1;
+     }
+     50% {
+       opacity: 0.5;
+     }
+     100% {
+       opacity: 0;
+     }
+   }

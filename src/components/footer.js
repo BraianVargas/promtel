@@ -27,7 +27,7 @@ const socials = [
 ]
 const iconList = socials.map((social) =>
   <li id={social.id} className={social.iconName} key={social.id}>
-    <a href={social.link} target='_blank'>
+    <a href={social.link} target='_blank' rel="noreferrer" >
       <i className={social.logoClass} />
     </a>
   </li>
@@ -39,7 +39,7 @@ export default class Footer extends Component {
       <>
         <div className='footer'>
           <div className='logo'>
-            <a href='/'>
+            <a href={'/'}>
               <img  alt='logo-promtel' src={logo}/>
             </a>
           </div>
@@ -49,8 +49,8 @@ export default class Footer extends Component {
             </ul>
           </div>
           <div className='buttons-extra'>
-            <a> Contacto </a>
-            <a> Trabaja con nosotros </a>
+            <a href={'/'}> Contacto </a>
+            <a href={'/'}> Trabaja con nosotros </a>
           </div>
         </div>
       </>

@@ -1,77 +1,81 @@
 /* elementos html */
-nav{
+nav {
+     top: 0;
      width: 100%;
      z-index: 10;
-     padding: .5em;
      height: 100px;
-     background-color: rgba(var(--color1), .2);
-     transition: all .3s ease-in-out;
-
+     background-color: rgba(var(--color1), .2);     
+     transition: all 1s ease-in-out;
+     
 }
 
 /* custom Classes */
-.navlinks{
+.navlinks {
      display: block;
      justify-content: center;
-     
+
 }
-.navlinks ul li{
+
+.navlinks ul li {
      display: flex;
      justify-content: space-between;
      margin: auto 0;
 }
+
 .links {
      font-size: 20px;
      text-decoration: none;
      color: white;
      margin-top: auto;
-     padding: 20px 50px; 
-     transition: all .3s ease-in-out;
+     padding: 20px 50px;
+     transition: all 1s ease-in-out;
 }
-.logo img{
+
+.logo img {
      width: 200px;
      max-width: 350px;
      margin: 0 50px;
-     transition: all .3s ease-in-out;
+     transition: all 1s ease-in-out;
 }
-.scrolled{
+
+.scrolled {
+     top: -5px;
      height: 120px;
      width: 100%;
      padding: .8em;
      position: fixed;
      background-color: rgba(var(--color1), .8);
-     transition: all .3s ease-in;
+     animation: all 1.2s ease-in-out;
 }
-.scrolled .links{
+
+.scrolled .links {
      font-size: 16px;
-     transition: all .3s ease-in;
+     transition: all 1s ease-in;
 }
-.scrolled img{
+
+.scrolled img {
      width: 250px;
      padding: auto;
-     transition: all .3s ease-in-out;
+     transition: all 1s ease-in-out;
 }
 
-
 /* MEDIA QUERY */
-/* html elements */
-/* custom Classes */
 @media (max-width: 890px) {
-     nav{
-          transition: all .3s ease-in;
+     nav {
           height: auto;
           z-index: 10;
           width: 100%;
           padding: .5em;
-          position: fixed;
+          position: relative;
           background-color: rgba(var(--color1), .8);
-          transition: all .3s ease-in-out;
-
+          transition: all 1s ease-in-out;
      }
-     nav .logo img{
+
+     nav .logo img {
           width: 190px;
           margin: 0;
      }
+
      .scrolled {
           height: auto;
      }

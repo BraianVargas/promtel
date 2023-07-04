@@ -39,6 +39,7 @@ export default class Carousel extends Component {
          
           return (
                <>
+                    <h2 id='carousel-title'> Nuestros Servicios </h2>
                     <div id='carouselContainer' className='carousel carousel-fade slide'  data-bs-ride="carousel">
                          <div className='carousel-inner' >
                               { carouselData.map((item) => 
@@ -50,7 +51,7 @@ export default class Carousel extends Component {
                                         <img src={item.imgSrc} alt={item.title}/>
 
                                         <div className='carousel-caption text-start'>
-                                             <h1 className='upercase'> {item.title} </h1>
+                                             <h1> {item.title} </h1>
                                              <p> {item.subtitle} </p>
                                         </div>
                                    </div>

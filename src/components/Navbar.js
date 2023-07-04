@@ -7,10 +7,14 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
      var navbar = document.getElementById("navbar");
-     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 1) {
+     var scrollDownIndicator = document.getElementById("down");
+     
+     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 10) {
+          scrollDownIndicator.classList.add('scrolled1');
           navbar.classList.add('scrolled');
      } else {
           navbar.classList.remove('scrolled');
+          scrollDownIndicator.classList.remove('scrolled1');
      }
 }
 
@@ -34,7 +38,7 @@ export default class Navbar extends Component {
      }
      return (
                <div>
-                    <nav id='navbar'  className="navbar navbar-expand-lg ">
+                    <nav id='navbar'  className="navbar navbar-expand-lg">
                          <div className="container-fluid">
                               {data1}
                               <button className="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +52,9 @@ export default class Navbar extends Component {
                                         <li className="nav-item">
                                              <a className="links" aria-current="page" href={'/'}>Quienes somos</a>
                                         </li>
+
                                         {data}
+                                        
                                         <li className="nav-item">
                                              <a className="links" aria-current="page" href={'/about'}>Nuestro trabajo</a>
                                         </li>
@@ -59,6 +65,7 @@ export default class Navbar extends Component {
                               </div>
                          </div>
                     </nav>
+                    
 
                </div>
           )

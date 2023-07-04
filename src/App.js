@@ -6,8 +6,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import "./css/App.css"
 import Navbar from "./components/navbar"
 import Footer from './components/footer';
-// import Carousel from './components/carousel';
-// import Services from './components/services';
+import Carousel from './components/carousel';
+import Services from './components/services';
 import MainView from './components/mainView';
 
 export default function Root() {
@@ -16,8 +16,8 @@ export default function Root() {
       <Navbar/>
       <div>
         <MainView/>
-        {/* <Carousel/>
-        <Services/> */}
+        <Carousel/>
+        <Services/>
         <br/>
         <br/>
         <br/>
