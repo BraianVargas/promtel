@@ -1,11 +1,11 @@
 /* elementos html */
 nav{
      width: 100%;
-     z-index: 1;
+     z-index: 10;
      padding: .5em;
      height: 100px;
      background-color: rgba(var(--color1), .2);
-     transition: all .3s ease-in;
+     transition: all .3s ease-in-out;
 
 }
 
@@ -13,6 +13,7 @@ nav{
 .navlinks{
      display: block;
      justify-content: center;
+     
 }
 .navlinks ul li{
      display: flex;
@@ -25,11 +26,13 @@ nav{
      color: white;
      margin-top: auto;
      padding: 20px 50px; 
+     transition: all .3s ease-in-out;
 }
 .logo img{
      width: 200px;
      max-width: 350px;
      margin: 0 50px;
+     transition: all .3s ease-in-out;
 }
 .scrolled{
      height: 120px;
@@ -46,14 +49,14 @@ nav{
 .scrolled img{
      width: 250px;
      padding: auto;
-     transition: all .3s ease-in;
+     transition: all .3s ease-in-out;
 }
 
 
 /* MEDIA QUERY */
 /* html elements */
 /* custom Classes */
-@media (max-width: 600px) {
+@media (max-width: 890px) {
      nav{
           transition: all .3s ease-in;
           height: auto;
@@ -62,9 +65,14 @@ nav{
           padding: .5em;
           position: fixed;
           background-color: rgba(var(--color1), .8);
+          transition: all .3s ease-in-out;
+
      }
      nav .logo img{
-          width: 100;
-          left: 0;
+          width: 190px;
+          margin: 0;
+     }
+     .scrolled {
+          height: auto;
      }
 }

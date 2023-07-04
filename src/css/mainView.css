@@ -1,0 +1,53 @@
+
+.carousel{
+     top:-100px;
+     height: 100vh;
+}
+.carousel-item img{
+     height: 100vh;
+     filter: blur(2px) brightness(.5) contrast(105%);
+     object-fit: cover;
+     object-position: center;
+}
+.carousel-caption{
+     margin: auto;
+     top: 50vh;
+}
+h1{
+     font-family: "wght", sans-serif;
+     font-size: 80px;
+     font-weight: 1000;
+
+}
+/* -------------- MEDIA SCREEN ---------------- */
+@media (max-width: 600px) {
+     .carousel, .carousel-inner{
+          top: auto;
+          height: 240px;
+     }
+     .carousel-item{
+          position: relative;
+          z-index: -10;
+          height: 500px;
+          max-height: 800px;
+     }
+     .carousel-caption{
+          top: 15vh;
+     }
+     .carousel-caption h1 {
+          font-size: 30px;
+          margin: auto;
+          text-align: center;
+          animation: all forwards 2s;
+          transition: all 1s;
+     }
+     .carousel-caption p {
+          font-size: .6em;
+          text-align: center;
+
+     }
+     .carousel-caption {
+          bottom: 40vh !important;
+          text-align: center !important;
+     }
+}

@@ -14,13 +14,29 @@ function scrollFunction() {
      }
 }
 
-
 export default class Navbar extends Component {
   render() {
+     let data;
+     let data1;
+
+     if (window.innerWidth > 890) {
+               data = (<li className='nav-item'>
+                    <a className="logo navbar-brand" href="/">
+                         <img alt='logo-promtel' src={logo}/>
+                    </a>
+               </li>)
+     } else {
+          if (window.innerWidth <  890){
+               data1 = (<a className="logo navbar-brand" href="/">
+                    <img alt='logo-promtel' src={logo}/>
+               </a>)
+          }
+     }
      return (
                <div>
                     <nav id='navbar'  className="navbar navbar-expand-lg ">
                          <div className="container-fluid">
+                              {data1}
                               <button className="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                    <span className="navbar-toggler-icon"></span>
                               </button>
@@ -30,13 +46,9 @@ export default class Navbar extends Component {
                                              <a className="links" aria-current="page" href={'/'}>Inicio</a>
                                         </li>
                                         <li className="nav-item">
-                                             <a className="links" aria-current="page" href={'#'}>Quienes somos</a>
+                                             <a className="links" aria-current="page" href={'/'}>Quienes somos</a>
                                         </li>
-                                        <li className='nav-item'>
-                                             <a className="logo navbar-brand" href="/">
-                                                  <img  alt='logo-promtel' src={logo}/>
-                                             </a>
-                                        </li>
+                                        {data}
                                         <li className="nav-item">
                                              <a className="links" aria-current="page" href={'/about'}>Nuestro trabajo</a>
                                         </li>
