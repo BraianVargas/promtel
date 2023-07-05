@@ -7,7 +7,6 @@ import "./css/App.css"
 import Navbar from "./components/navbar"
 import Footer from './components/footer';
 import Carousel from './components/carousel';
-import Services from './components/services';
 import MainView from './components/mainView';
 
 export default function Root() {
@@ -17,7 +16,6 @@ export default function Root() {
       <div>
         <MainView/>
         <Carousel/>
-        <Services/>
         <br/>
         <br/>
         <br/>

@@ -93,24 +93,27 @@
      #main-view{
           position: relative;
           top: -120px;
-          height: 100vh;
+          height: 90vh;
      }
      #main-view .carousel-caption{
           top: 35vh;
      }
      #main-view h1{
           font-family: "slab", sans-serif;
-          font-size: 50px;
+          font-size: 40px;
           font-weight: 500;
           text-align: center;
           letter-spacing: 3px;
+     }
+     #main-view p{
+          font-size: 12px;
      }
      #main-view h1{
           text-align: center;
      }
      .down{
-          position: relative;
-          top: 190px;
+          position: absolute;
+          bottom: 190px;
           left: calc(50% - 10px);
           transition: opacity 1s ease-in-out;
           animation: fade 1.2s reverse;
