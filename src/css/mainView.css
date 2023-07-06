@@ -3,12 +3,15 @@
      position: relative;
      top: -100px;
      height: 90vh;
+     bottom: -100px;
 }
 #main-view .carousel-item img{
      height: 100vh;
      filter: blur(2px) brightness(.5) contrast(105%) saturate(90%) ;
      object-fit: cover;
      object-position: center;
+     bottom: -100px;
+
 }
 .carousel-caption{
      margin: auto;

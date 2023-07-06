@@ -10,24 +10,28 @@ import "../css/carousel.css"
 const carouselData = [
      {
           id : "01",
+          route : "/tecnologia",
           imgSrc:img01,
           title: "Tecnología",
           subtitle: "SOLUCIONES TECNOLÓGICAS PARA EMPRESAS"
      },
      {
           id : "02",
+          route : "/iot",
           imgSrc:img02,
           title: "IOT",
           subtitle: "INTERNET DE LAS COSAS APLICADO A TUS NECESIDADES"
      },
      {
           id : "03",
+          route : "/construcciones",
           imgSrc:img03,
           title: "Construcciones",
           subtitle: "OBRAS CIVILES Y CONSTRUCCIONES ELECTROMECÁNICAS."
      },
      {
           id : "04",
+          route : "/fibraoptica",
           imgSrc:img04,
           title: "Fibra Óptica",
           subtitle: "CONEXION, SOLDADURA Y ENLACES INALAMBRICOS."
@@ -36,9 +40,8 @@ const carouselData = [
 
 export default class Carousel extends Component {
      render() {
-         
           return (
-               <>
+               <div className='mainDivCarousel'>
                     <h2 id='carousel-title'> Nuestros Servicios </h2>
                     <div id='carouselContainer' className='carousel carousel-fade slide'  data-bs-ride="carousel">
                          <div className='carousel-inner' >
@@ -53,6 +56,7 @@ export default class Carousel extends Component {
                                         <div className='carousel-caption text-start'>
                                              <h1> {item.title} </h1>
                                              <p> {item.subtitle} </p>
+                                             <a href={item.route}>Ver más...</a>
                                         </div>
                                    </div>
                               )}
@@ -70,7 +74,7 @@ export default class Carousel extends Component {
                               </span>
                          </button>
                     </div>
-               </>
+               </div>
           )
      }
 }
