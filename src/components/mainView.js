@@ -16,7 +16,12 @@ export default class MainView extends Component {
                          <img src={fondo} className="d-block w-100" alt="..."/>
                     </div>
                     <div className='carousel-caption'>
-                         <h1>PROMTEL S.R.L</h1>
+                         <svg>
+                              <text x="50%" y="20%" cy="50" dy="35" text-anchor="middle" color='white'>
+                                   PROMTEL S.R.L
+                              </text>
+                         </svg>
+                         {/* <h1>PROMTEL S.R.L</h1> */}
                          <p>
                               Servicios electromecánicos, construcción, enlaces inalámbricos y más...
                          </p>

@@ -9,75 +9,16 @@ import Footer from './components/footer';
 import Carousel from './components/carousel';
 import MainView from './components/mainView';
 import Clients from './components/clients';
+import About from './components/about';
 
 export default function Root() {
   return (
     <>
       <Navbar/>
-      <div>
-        <MainView/>
-        <Carousel/>
-        <Clients/>
-        <br/>
-        <br/>
-        <br/>
-
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-      </div>
+      <MainView/>
+      <About/>
+      <Carousel/>
+      <Clients/>
       <Footer/>
     </>
   );

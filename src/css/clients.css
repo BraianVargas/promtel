@@ -1,7 +1,6 @@
 .clientsContainer {
     position: relative;
-    top: 110px;
-    bottom: 110px;
+    margin-top: -140px;
 }
 
 .clients-title {
@@ -14,12 +13,25 @@
     cursor: pointer;
     padding: 1.5em;
     display: block;
-    /* Agrega esta línea */
     width: 800px;
     max-width: 1200px;
     top: 110px;
-    margin-top: 25px;
-    margin-bottom: 80px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    
+    --b: 5px;   /* the thickness of the line */
+
+    color: transparent; /* Cambia el color a transparente */
+    padding-block: var(--b);
+    background: linear-gradient(var(--color10) 50%, #fff 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+              linear-gradient(var(--color4) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+    background-clip: text,padding-box;
+    transition: .5s var(--_s,0s) ease, background-size .3s calc(.3s - var(--_s,0s));
+}
+.clients-title:hover {
+--_p: 100%;
+--_s: .2s;
 }
 
 .banner-container {

@@ -14,10 +14,14 @@
   --color4 : #8192fe;
   --color5 : #f0f0ff;
   --color6 : #112437;
-  --color7 : #0d4d6a;
+  --color7 : #0a4f6a;
   --color8 : #0986a9;
   --color9 : #05cef0;
   --color10 : #0ffff8;
+}
+a{
+  text-decoration: none;
+  color: white;
 }
 
 * {
