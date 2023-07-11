@@ -1,0 +1,79 @@
+.clientsContainer {
+    position: relative;
+    top: 110px;
+    bottom: 110px;
+}
+
+.clients-title {
+    position: relative;
+    font-size: 60px;
+    font-family: "slab", sans-serif;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    margin: auto;
+    cursor: pointer;
+    padding: 1.5em;
+    display: block;
+    /* Agrega esta línea */
+    width: 800px;
+    max-width: 1200px;
+    top: 110px;
+    margin-top: 25px;
+    margin-bottom: 80px;
+}
+
+.banner-container {
+    top: 100px;
+    height: 150px;
+    background-size: contain;
+}
+
+.banner1 {
+    top: 120px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+    background: rgb(255, 255, 255);
+    width: auto;
+    overflow: hidden;
+    animation: animation_banner_up_infinite linear infinite 25s;
+}
+
+.banner2 {
+    top: 120px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+    background: rgb(255, 255, 255);
+    width: auto;
+    overflow: hidden;
+    animation: animation_banner_up_infinite linear infinite 25s reverse;
+}
+
+@keyframes animation_banner_up_infinite {
+    to {
+        background-position: -4163px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .clientsContainer{
+        top: -150px;
+    }
+    .clients-title{
+        top: 85px;
+        font-size: 30px;
+        min-width: 200px;
+        width: 300px;
+        padding: 1em;
+        animation: transition .1s infinite;
+        font-size: 30px;
+        text-align: center;
+    }
+    .banner1{
+        width: ;
+    }
+}

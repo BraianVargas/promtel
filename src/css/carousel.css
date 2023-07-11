@@ -1,13 +1,21 @@
-#mainDivCarousel{
-     margin-top: 50px;
+.mainDivCarousel{
+     margin-top: 2%;
+     margin-bottom: 2%;
 }
 #carouselContainer{
      position: relative;
+     margin-top: 2%;
      width: 100%;
      height: 500px;
      margin: 0;
      max-height: 800px;
      transition: all 2s ease;
+}
+#carouselContainer button{
+     top: 3%;
+     bottom: 0%;
+     height: 780px;
+     max-height: 800px;
 }
 #carouselContainer .carousel-inner{
      position: absolute;
@@ -17,7 +25,9 @@
 }
 #carouselContainer .carousel-item img{
      width: 100%;
-     height: 500px;
+     margin-top: 2%;
+     margin-bottom: 2%;
+     height: auto;
      max-height: 800px;
      filter: blur(2px) contrast(110%) brightness(0.4);
      object-fit: cover;
@@ -35,7 +45,6 @@
      top: -80px;
 }
 #carouselContainer .carousel-caption a{
-     
      font-weight: 500;
      color: #000;
      background-color: var(--color4);
@@ -80,40 +89,75 @@
 
 
      margin: auto;
-     margin-bottom: 50px;
      --b: 5px;   /* the thickness of the line */
-   
+
      color: transparent; /* Cambia el color a transparente */
      padding-block: var(--b);
      background: linear-gradient(var(--color10) 50%, #fff 0) 0% calc(100% - var(--_p,0%))/100% 200%,
-                 linear-gradient(var(--color4) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+               linear-gradient(var(--color4) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
      -webkit-background-clip: text,padding-box;
      background-clip: text,padding-box;
      transition: .5s var(--_s,0s) ease, background-size .3s calc(.3s - var(--_s,0s));
-   }
-   
-   #carousel-title:hover {
-     --_p: 100%;
-     --_s: .2s;
-   }
-   
+}
+#carousel-title:hover {
+--_p: 100%;
+--_s: .2s;
+}
+
 @media (max-width: 600px) {
+     .mainDivCarousel{
+          margin-top: -50px;
+     }
+     #carouselContainer{
+          height: 280px;
+          max-height: 3000px;
+     }
+     #carouselContainer img{
+          top: 3%;
+          height: 300px;
+          max-height: 400px;
+     }
      #carousel-title{
-          top: -120px;
           font-size: 30px;
-          margin: auto;
           min-width: 200px;
           width: 300px;
           padding: 1em;
           animation: transition .1s infinite;
-
+     }
+     
+     #carouselContainer button{
+          top: 3%;
+          height: 250px;
+          max-height: 300px;
      }
      #carouselContainer .carousel-caption h1{
-          font-size: 40px;
-          top: -100px;
+          position: relative;
+          text-align: center;
+          font-size: 30px;
+          top: -178px;
      }
      #carouselContainer .carousel-caption p{
-          font-size: 16px;
-          top: -60px;
+          position: relative;
+          text-align: center;
+          font-size: 8px;
+          top: -180px;
+     }
+     #carouselContainer .carousel-caption a{
+          position: relative;
+          top: -120px;
+          font-weight: 300;
+          padding: 5px 12px;
+          font-size: 8px;
+          width: 70px;
+     }
+     
+     #carouselContainer .carousel-caption a:hover{
+          transition : .5s;
+          top: -120px;
+          padding: 7px 14px;
+          width: 80px;
+          background-color: #133780;
+          color: #ffffff;
+          border: solid 2px #fff;
      }
 }

@@ -56,7 +56,7 @@ export default class Carousel extends Component {
                                         <div className='carousel-caption text-start'>
                                              <h1> {item.title} </h1>
                                              <p> {item.subtitle} </p>
-                                             <a href={item.route}>Ver más...</a>
+                                             <a href={item.route} >Ver más...</a>
                                         </div>
                                    </div>
                               )}

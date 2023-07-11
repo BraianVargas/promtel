@@ -8,6 +8,7 @@ import Navbar from "./components/navbar"
 import Footer from './components/footer';
 import Carousel from './components/carousel';
 import MainView from './components/mainView';
+import Clients from './components/clients';
 
 export default function Root() {
   return (
@@ -16,6 +17,7 @@ export default function Root() {
       <div>
         <MainView/>
         <Carousel/>
+        <Clients/>
         <br/>
         <br/>
         <br/>
