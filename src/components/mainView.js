@@ -17,7 +17,7 @@ export default class MainView extends Component {
                     </div>
                     <div className='carousel-caption'>
                          <svg>
-                              <text x="50%" y="20%" cy="50" dy="35" text-anchor="middle" color='white'>
+                              <text x="50%" y="20%" cy="50" dy="35" textAnchor="middle" color='white'>
                                    PROMTEL S.R.L
                               </text>
                          </svg>

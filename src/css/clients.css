@@ -24,7 +24,7 @@
     color: transparent; /* Cambia el color a transparente */
     padding-block: var(--b);
     background: linear-gradient(var(--color10) 50%, #fff 0) 0% calc(100% - var(--_p,0%))/100% 200%,
-              linear-gradient(var(--color4) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+                linear-gradient(var(--color4) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
     -webkit-background-clip: text,padding-box;
     background-clip: text,padding-box;
     transition: .5s var(--_s,0s) ease, background-size .3s calc(.3s - var(--_s,0s));
@@ -73,7 +73,7 @@
 
 @media (max-width: 600px) {
     .clientsContainer{
-        top: -150px;
+        margin-top: -300px;
     }
     .clients-title{
         top: 85px;
@@ -85,4 +85,8 @@
         font-size: 30px;
         text-align: center;
     }
+    .clientsContainer .clients-title{
+        margin-bottom: 3em;
+    }
+
 }

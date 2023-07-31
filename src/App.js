@@ -9,14 +9,14 @@ import Footer from './components/footer';
 import Carousel from './components/carousel';
 import MainView from './components/mainView';
 import Clients from './components/clients';
-import About from './components/about';
+import Timeline from './components/timeline';
 
 export default function Root() {
   return (
     <>
       <Navbar/>
       <MainView/>
-      <About/>
+      <Timeline/>
       <Carousel/>
       <Clients/>
       <Footer/>
