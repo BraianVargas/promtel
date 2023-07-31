@@ -6,9 +6,11 @@ import "../css/mainView.css"
 import fondo from "../img/home/fondo.webp"
 
 
+
+
 export default class MainView extends Component {
      render() {
-          
+
      return (
           <div id="main-view" className="carousel slide">
                <div className="carousel-inner">

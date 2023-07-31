@@ -11,6 +11,8 @@ import App from './App';
 import About from './components/about';
 import Contacts from './components/contacts';
 import Tecnologia from './components/tecnologia';
+import Iot from './components/iot';
+import Construcciones from './components/construcciones';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
   {
     path:"/tecnologia",
     element: <Tecnologia/>
+  },
+  {
+    path:"/iot",
+    element: <Iot/>
+  },
+  {
+    path:"/construcciones",
+    element: <Construcciones/>
   }
 ]);
 

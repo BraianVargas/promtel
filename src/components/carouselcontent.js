@@ -1,4 +1,9 @@
 import React, { Component } from 'react'
+import "../css/carouselcontent.css"
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 export default class Carouselcontent extends Component {
     render() {
@@ -7,14 +12,14 @@ export default class Carouselcontent extends Component {
 
         return (
             <>
-            <div>
-                <div>
-                    <h1> {data.title} </h1>
+            <div className='main-content container m-auto row '>
+                <div className='content-container col-12 col-md-4 my-5'>
+                    <h1 className='my-4'> {data.title} </h1>
                     <section>
                         {data.content}
                     </section>
                 </div>
-                <div className='carousel-container'>
+                <div className='carousel-container col-12 col-md-8 my-5'>
                     <div id="carouselExample" className="carousel slide">
                         <div className="carousel-inner">
                             {images.map((img, index) =>

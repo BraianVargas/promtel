@@ -2,19 +2,19 @@ import React, { Component } from 'react'
 import logo from '../img/logo.png';
 import "../css/navbar.css"
 
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
      var navbar = document.getElementById("navbar");
-     var scrollDownIndicator = document.getElementById("down");
      
      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 10) {
-          scrollDownIndicator.classList.add('scrolled1');
           navbar.classList.add('scrolled');
      } else {
           navbar.classList.remove('scrolled');
-          scrollDownIndicator.classList.remove('scrolled1');
      }
 }
 
