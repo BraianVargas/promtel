@@ -19,7 +19,7 @@ function scrollFunction() {
 }
 
 export default class Navbar extends Component {
-  render() {
+render() {
      let data;
      let data1;
 
