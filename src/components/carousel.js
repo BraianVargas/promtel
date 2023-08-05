@@ -50,14 +50,18 @@ export default class Carousel extends Component {
                                         className={ item.id === "01" ? 'carousel-item active ' : 'carousel-item'} 
                                         id={ item.id } 
                                         key={item.id}
-                                   >
-                                        <img src={item.imgSrc} alt={item.title}/>
-
+                                        >
+                                        <div
+                                             className='imgCarousel'
+                                             style={{ backgroundImage: `url(${item.imgSrc})` }}
+                                             alt={item.title}
+                                        />
                                         <div className='carousel-caption text-start'>
                                              <h1> {item.title} </h1>
                                              <p> {item.subtitle} </p>
                                              <a href={item.route} >Ver más...</a>
                                         </div>
+                                        
                                    </div>
                               )}
                          </div>

@@ -10,12 +10,10 @@ import fondo from "../img/home/fondo.webp"
 
 export default class MainView extends Component {
      render() {
-
      return (
           <div id="main-view" className="carousel slide">
                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                         <img src={fondo} className="d-block w-100" alt="..."/>
+                    <div className="carousel-item active" >
                     </div>
                     <div className='carousel-caption'>
                          <svg>
