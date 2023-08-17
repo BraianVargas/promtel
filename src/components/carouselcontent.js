@@ -13,13 +13,13 @@ export default class Carouselcontent extends Component {
         return (
             <>
             <div className='main-content container m-auto row '>
-                <div className='content-container col-12 col-md-4 my-5'>
+                <div className='content-container my-5 col-12 col-md-4'>
                     <h1 className='my-4'> {data.title} </h1>
                     <section>
                         {data.content}
                     </section>
                 </div>
-                <div className='carousel-container col-12 col-md-8 my-5'>
+                <div className='carousel-container my-5 col-12 col-md-8'>
                     <div id="carouselExample" className="carousel slide">
                         <div className="carousel-inner">
                             {images.map((img, index) =>

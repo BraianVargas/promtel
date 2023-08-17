@@ -11,13 +11,11 @@
      margin:auto;
 }
 .carousel-container{
-     width: 850px;
      height: auto;
      max-height: 500px;
 }
 .carousel-container.carousel-inner{
-     position: absolute;
-     width: 100%;
+     width: 80%;
      height: auto;
      max-height: 800px;
 }
