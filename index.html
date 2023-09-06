@@ -41,11 +41,11 @@
                             <a class="links" aria-current="page" href='/'>Quienes somos</a> </li> 
 
                             <a class="logo navbar-brand" href="/">
-                                <img alt='logo-promtel' src="./static/img/logo.png">
+                                <img alt='logo-promtel' src="./static/img/logo.png"> 
                             </a>
 
                             <li class="nav-item"> 
-                                <a class="links" href="#" onClick={this.props.scrollToTrabajo}> Nuestro trabajo</a>
+                                <a class="links" href="#nuestro_trabajo"> Nuestro trabajo</a>
                             </li>
                         <li class="nav-item">
                             <a class="links" aria-current="page" href='/contacts'>Contacto </a>
@@ -86,7 +86,7 @@
     </div>
 
     <!-- TIMELINE -->
-    <div class="timeline-container">
+    <div id="timeline" class="timeline-container">
         <h1 class="clients-title text-center">Historia</h1>
         <p class="text-center main-info my-2">Somos PROMTEL S.R.L, una empresa de capitales argentinos, dedicada a la instalación y mantenimiento de sistemas de redes, tarifación telefónica y soluciones IT, en la región de Cuyo y otras provincias de nuestro país.</p>
         
@@ -95,28 +95,72 @@
                 <li>
                     <span></span>
                     <div>
-                        <div class="title">Fundación</div>
-                        <div class="info">&nbsp;</div>
-                        <div class="type">La fundación de PROMTEL</div>
+                        <div class="title fs-5">Fundación</div>
+                        <div class="info">Con el objetivo de brindar un completo servicio tecnológico</div>
+                        <div class="type ">fundamos PROMTEL</div>
                     </div>
-                    <span>1997</span>
+                    <span></span>
+                    <p class="number">1997</p>
                 </li>
                 <li>
+                    <span></span>
                     <div>
-                        <div class="title">Codify</div>
-                        <div class="info">Let's make coolest things in javascript</div>
-                        <div class="type">Presentation</div>
+                        <div class="title fs-5">Construcciones</div>
+                        <div class="info">Incorporamos construcciónes a PROMTEL con el objetivo de abrir nuevas fronteras</div>
+                        <div class="type"></div>
                     </div>
-                    <span>2005</span>
+                    <span></span>
+                    <p class="number">2005</p>
                 </li>
                 <li>
+                    <span></span>
                     <div>
-                        <span></span>
-                        <div class="title">Codify</div>
-                        <div class="info">Let's make coolest things in css</div>
-                        <div class="type">Review</div>
+                        <div class="title fs-5">Electricidad</div>
+                        <div class="info">Al servicio e nuevos clientes comenzamos trabajando en el rubro eléctrico</div>
+                        <div class="type">Redes y conexiones eléctricas</div>
                     </div>
-                    <span>2006</span>
+                    <span></span>
+                    <p class="number">2006</p>
+                </li>
+                <li>
+                    <span></span>
+                    <div>
+                        <div class="title fs-5">Redes</div>
+                        <div class="info">Con la mejor calidad de materiales incorporados, comenzamos a trabajar con fibra óptica</div>
+                        <div class="type">FIBRA ÓPTICA</div>
+                    </div>
+                    <span></span>
+                    <p class="number">2010</p>
+                </li>
+                <li>
+                    <span></span>
+                    <div>
+                        <div class="title fs-5">IOT</div>
+                        <div class="info">Desarrollo de nuevas tecnologías orientadas a ofimática y electricidad.</div>
+                        <div class="type">Tecnología</div>
+                    </div>
+                    <span></span>
+                    <p class="number">2015</p>
+                </li>
+                <li>
+                    <span></span>
+                    <div>
+                        <div class="title fs-5">Construcción Civil</div>
+                        <div class="info">Nuevos servicios incorporados en construcción de obras civiles y residenciales </div>
+                        <div class="type">Construcción</div>
+                    </div>
+                    <span></span>
+                    <p class="number">2019</p>
+                </li>
+                <li>
+                    <span></span>
+                    <div>
+                        <div class="title fs-5">Actualidad</div>
+                        <div class="info">Continuamos avanzando...</div>
+                        <div class="type">Servicios</div>
+                    </div>
+                    <span></span>
+                    <p class="number">2023</p>
                 </li>
             </ul>
         </div>
@@ -124,6 +168,127 @@
         <p class="text-center main-info mb-5">En más de 25 años de compromiso, apostamos al crecimiento de la región, implementando tecnologías de punta y ofreciendo soluciones altamente efectivas en telecomunicación, redes y IoT.</p>
     </div>
 
+    <!-- CAROUSEL -->
+    <div class='mainDivCarousel' id="nuestro_trabajo">
+        <h2 id='carousel-title'> Nuestros Servicios </h2>
+        <div id='carouselContainer' class='carousel carousel-fade slide'  data-bs-ride="carousel">
+            <div class='carousel-inner'>
+                <div class='carousel-item active'>
+                    <div class='imgCarousel'>
+                        <div
+                            class='imgCarouselBackground'
+                            alt="Tecnología"
+                            style="
+                                background-image: url('./static/img/home/carousel/tecnologia.webp');
+                            "
+                        />
+                    </div>
+                    <div class='carousel-caption text-start'>
+                        <h1> Tecnología </h1>
+                        <p> SOLUCIONES TECNOLÓGICAS PARA EMPRESAS</p>
+                        <a href="/tecnologia">Ver más...</a>
+                    </div>
+                </div>
+                <div class='carousel-item'>
+                    <div class='imgCarousel'>
+                        <div
+                            class='imgCarouselBackground'
+                            alt="Iot"
+                            style="
+                                background-image: url('./static/img/home/carousel/iot.webp');
+                            "
+                        />
+                    </div>
+                    <div class='carousel-caption text-start'>
+                        <h1> IOT </h1>
+                        <p> INTERNET DE LAS COSAS APLICADO A TUS NECESIDADES </p>
+                        <a href="/iot">Ver más...</a>
+                    </div>
+                </div>
+                <div class='carousel-item'>
+                    <div class='imgCarousel'>
+                        <div
+                            class='imgCarouselBackground'
+                            alt="Iot"
+                            style="
+                                background-image: url('./static/img/home/carousel/construcciones.webp');
+                            "
+                        />
+                    </div>
+                    <div class='carousel-caption text-start'>
+                        <h1> Construcciones </h1>
+                        <p> OBRAS CIVILES Y CONSTRUCCIONES ELECTROMECÁNICAS. </p>
+                        <a href="/construcciones">Ver más...</a>
+                    </div>
+                </div>
+                <div class='carousel-item'>
+                    <div class='imgCarousel'>
+                        <div
+                            class='imgCarouselBackground'
+                            alt="FO"
+                            style="
+                                background-image: url('./static/img/home/carousel/fibra.webp');
+                            "
+                        />
+                    </div>
+                    <div class='carousel-caption text-start'>
+                        <h1> Fibra Óptica </h1>
+                        <p> CONEXION, SOLDADURA Y ENLACES INALAMBRICOS. </p>
+                        <a href="/fibra">Ver más...</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselContainer" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselContainer" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- CLIENTES -->
+    <div class='clientsContainer'>
+        <h1 class='clients-title'>Nuestros Clientes</h1>
+        <div class='banner-container'>
+            <div class='banner1' style="background-image: url('./static/img/home/banner.png');"></div>
+            <div class='banner1' style="background-image: url('./static/img/home/banner2.png');"></div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class='footer'>
+        <div class='logo'>
+            <a href='/'>
+            <img  alt='logo-promtel' src='./static/img/logo.png'/>
+            </a>
+        </div>
+        <div class='social'>
+            <ul>
+                <li id='1' class='Facebook'>
+                    <a href="https://www.facebook.com/promtelsrl" target='_blank' rel="noreferrer" >
+                        <i class='bi bi-facebook' />
+                    </a>
+                </li>
+                <li id='1' class='Linkedin'>
+                    <a href="https://www.linkedin.com/feed/" target='_blank' rel="noreferrer" >
+                        <i class='bi bi-linkedin' />
+                    </a>
+                </li>
+                <li id='1' class='Instagram'>
+                    <a href="https://www.instagram.com/promtel.srl/" target='_blank' rel="noreferrer" >
+                        <i class='bi bi-instagram' />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class='buttons-extra'>
+            <a href='/'> Contacto </a>
+            <a href='/'> Trabaja con nosotros </a>
+        </div>
+    </div>
 
 
 </body>

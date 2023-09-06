@@ -22,15 +22,20 @@
      height: auto;
      max-height: 800px;
 }
-#carouselContainer .carousel-item .imgCarousel{
-     width: 100%;
+.imgCarousel {
+     width: auto;
      height: 900px;
      margin-top: 2%;
      margin-bottom: 2%;
+     max-height: 600px;
+}
+
+.imgCarouselBackground {
+     width: auto;
+     height: 100%;
      background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
-     max-height: 600px;
      filter: blur(2px) contrast(110%) brightness(0.4);
 }
 

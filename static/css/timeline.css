@@ -13,12 +13,6 @@
 }
 
 
-@media (max-width: 768px) {
-    .timeline-container .clients-title {
-        margin-bottom: 90px;
-    }
-
-}
 
 .container ul {
     margin-top: 100px;
@@ -29,26 +23,28 @@
     font-size: 13px;
 }
 
+/* Lineas dashed */
 .container ul:before {
     content: ' ';
     width: 1px;
     height: 100%;
     position: absolute;
     border-left: 2px dashed #fff;
+    margin-left: 33.8%;
 }
 
 .container ul li {
     position: relative;
-    margin-left: 30px;
-    background-color: rgba(255, 255, 255, 0.2);
+    margin-left: 55%;
+    width: 250px;
+    background-color: rgb(3, 135, 175);
     padding: 14px;
     border-radius: 6px;
-    width: 250px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
 }
 
 .container ul li:not(:first-child) {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 /* lineas */
@@ -56,7 +52,7 @@
     width: 2px;
     height: 100%;
     background: #fff;
-    left: auto;
+    left: -33px;
     top: 0;
     position: absolute;
 }
@@ -71,7 +67,7 @@
     border-radius: 50%;
     border: 2px solid #fff;
     position: absolute;
-    background: #3c86cf;
+    background: #2e75bd;
     left: -5px;
     top: 0;
 }
@@ -81,25 +77,32 @@
 }
 
 .container ul li>div {
-    margin-left: 10px;
+    margin-left: auto;
 }
 
 .container ul div .title,
 .container ul div .type {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 12px;
+}
+.container ul div .type {
+    font-style: italic;
 }
 
 .container ul div .info {
-    font-weight: 300;
+    font-weight: 250;
 }
 
 .container ul div>div {
     margin-top: 5px;
 }
 
-.container span.number {
-    height: 100%;
+.container p.number {
+    font-weight: 750;
+    font-size: 20px;
+    position: absolute;
+    left: -100px;
+    top: -5px;
 }
 
 .container span.number span {
@@ -115,4 +118,18 @@
 
 .container span.number span:last-child {
     top: 100%;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .timeline-container .clients-title {
+        margin-bottom: 90px;
+    }
+    
+    .container ul li>span {
+        left: -100px;
+    }
+
 }
