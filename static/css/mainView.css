@@ -1,0 +1,167 @@
+
+
+#main-view{
+     position: relative;
+     top: -100px;
+     height: 90vh;
+     bottom: -100px;
+}
+#main-view .carousel-item{
+     background-image: url('../img/home/fondo.webp');
+     height: 100vh;
+     filter: blur(2px) brightness(.5) contrast(105%) saturate(90%) ;
+     background-position: center;
+     /* bottom: -100px; */
+}
+.carousel-caption{
+     margin: auto;
+     top: 40vh;
+}
+#main-view h1{
+     display: none;
+}
+svg {
+     font-family: "slab","Russo One", sans-serif;
+     font-size: 5em;
+     font-weight: 1000;
+     letter-spacing: 3px;
+	width: 250%;
+     height: 100%;
+     margin-top: -3%;
+     margin-bottom: -15%;
+     margin-left: calc(100% - 220%);
+}
+svg text {
+	animation: stroke 14s infinite alternate;
+	stroke-width: 2;
+	stroke: var(--color5);
+}
+
+
+/* animacion scroll down */
+.down{
+     position: absolute;
+     top: calc(100vh - 80px);
+     left: calc(50% - 20px);
+     transition: opacity 1s ease-in-out;
+     animation: fade 1.2s reverse;
+}
+.ball1 {
+	background: #fff;
+	height: 8px;
+	width: 8px;
+	border-radius: 100%;
+     animation: jumpInfinite 1.2s infinite;
+     margin: auto;
+}
+.ball2 {
+	background: #fff;
+	height: 6px;
+	width: 6px;
+	border-radius: 100%;
+     animation: jumpInfinite 1.2s infinite;
+     margin: auto;
+
+}
+.ball3 {
+	background: #fff;
+	height: 4px;
+	width: 4px;
+	border-radius: 100%;
+     animation: jumpInfinite 1.2s infinite;
+     margin: auto;
+
+}
+.ball4 {
+	background: #fff;
+	height: 2px;
+	width: 2px;
+	border-radius: 100%;
+     animation: jumpInfinite 1.2s infinite;
+     margin: auto;
+
+}
+.spacer {
+	height: 4px;
+     animation: jumpInfinite 1.2s infinite;
+     margin: auto;
+
+}
+.arrow {
+	height: 20px;
+	width: 20px;
+	border: 0;
+	border-right: 4px solid #fff;
+	border-top: 4px solid #fff;
+	transform: translateY(-10px) rotate(135deg);
+     animation: jumpInfinite 1.2s infinite;
+     margin: auto;
+}
+
+/* -------------- MEDIA SCREEN ---------------- */
+@media (max-width: 768px) {
+     #main-view{
+          padding: 0;
+          position: relative;
+          top: -120px;
+          height: 90vh;
+     }
+     #main-view .carousel-caption{
+          top: 35vh;
+     }
+     svg {
+          font-size: 1.8em;
+          width: 800px;
+          margin: auto;
+          margin-bottom: -65%;
+          margin-left: calc(100% - 250%);
+
+     }
+     #main-view p{
+          top: -120px;
+          font-size: 12px;
+     }
+     .down{
+          position: absolute;
+          bottom: 190px;
+          left: calc(50% - 10px);
+          transition: opacity 1s ease-in-out;
+          animation: fade 1.2s reverse;
+     }
+}
+
+
+@keyframes jumpInfinite {
+     0% {
+       margin-top: 0;
+     }
+     50% {
+       margin-top: 1px;
+     }
+     100% {
+       margin-top: 0;
+     }
+}
+@keyframes fade {
+     0% {
+          opacity: 1;
+     }
+     50% {
+          opacity: 0.5;
+     }
+     100% {
+          opacity: 0;
+     }
+}
+@keyframes stroke {
+     0%   {
+          fill: var(--color5); stroke: var(--color2);
+          stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+     }
+     50%  {fill: var(--color5); stroke: var(--color2); stroke-width: 2; }
+     80%  {fill: var(--color2); stroke: var(--color5); stroke-width: 3; }
+     100% {
+          fill: var(--color2); stroke: var(--color5);
+          stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 1;
+     }
+}

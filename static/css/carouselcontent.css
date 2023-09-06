@@ -1,0 +1,27 @@
+
+.content-container{
+     border-radius: 15px;
+     border: 1px solid white;
+     display: block;
+     position: relative;
+}
+.content-container h1{
+     font-weight: 800;
+     border-bottom: 1px solid white;
+     margin:auto;
+}
+.carousel-container{
+     height: auto;
+     max-height: 500px;
+}
+.carousel-container.carousel-inner{
+     width: 80%;
+     height: auto;
+     max-height: 800px;
+}
+.carousel-container .carousel-inner div img{
+     width: 100%;
+     height: auto;
+     max-height: 500px;
+     border-radius: 2em;
+}

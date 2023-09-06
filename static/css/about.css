@@ -1,0 +1,66 @@
+.timeline-container{
+    margin-top: -120px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #075ab3;
+    border-radius: 50%;
+    position: relative;
+}
+
+.timeline-dot::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timeline-year,
+.timeline-description {
+    margin: 0 10px;
+}
+
+.timeline-year {
+    font-size: 1.2rem;
+    font-weight: 1200;
+}
+
+.timeline-description {
+    flex-grow: 1;
+}
+
+.timeline-item:nth-child(odd) .timeline-dot {
+    order: 1;
+}
+
+.timeline-item:nth-child(odd) .timeline-description {
+    order: 2;
+}
+
+.timeline-item:nth-child(even) .timeline-year {
+    order: 3;
+}
+
+.timeline-item:nth-child(even) .timeline-dot {
+    order: 4;
+}

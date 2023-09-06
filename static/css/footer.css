@@ -1,0 +1,78 @@
+/* elementos html */
+
+/* custom Classes */
+.footer{
+     display: flex;
+     position:relative;
+     justify-content: space-between;
+     width: 100%;
+     margin: auto;
+     margin-top: 6em;
+     padding: .6em;
+     background-color: rgba(var(--color1), 1);
+}
+.social{
+     display: flex;
+     position: relative;
+     justify-content: baseline;
+}
+.social ul{
+     display: flex;
+     flex-direction: row;
+     margin: auto;
+     padding: auto;
+     justify-content: space-between;
+     align-items: center;
+}
+.social ul li{
+     display: flex;
+     padding: 0 10px;
+     justify-content: space-between;
+     align-items: center;
+}
+.social ul li i{
+     font-size: 1.4em;
+}
+.buttons-extra{
+     display: flex;
+     flex-direction: column;
+     margin: auto 40px;
+}
+.buttons-extra a{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     border: var(--color5) 2px solid;
+     padding: 5px;
+     margin-bottom: 5px;
+     border-radius: 10px;
+}
+
+
+
+/* MEDIA QUERY */
+/* html elements */
+/* custom Classes */
+@media (max-width: 1250px) {
+    
+     
+}
+
+@media (max-width: 600px) {
+     .footer {
+          flex-direction: column;
+          align-items: center;
+     }
+     .logo{
+          margin: auto;
+     }
+     .social{
+          margin-top: 1.2em;
+          margin-bottom: 1.2em;
+          margin-left: -35px;
+     }
+     .buttons-extra {
+          margin-top: 1em;
+          margin-bottom: 3em;
+     }
+   }

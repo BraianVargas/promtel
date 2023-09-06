@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'wght';
+    src: url('../fonts/wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'slab';
+    src: url('../fonts/alfaSlab.ttf') format('truetype');
+}
+
+:root {
+    --color1: 0, 0, 5;
+    --color2: #133780;
+    --color3: #435aa0;
+    --color4: #8192fe;
+    --color5: #f0f0ff;
+    --color6: #112437;
+    --color7: #0a4f6a;
+    --color8: #0986a9;
+    --color9: #05cef0;
+    --color10: #0ffff8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+* {
+    color: white;
+}
+
+body {
+    background-color: var(--color4);
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
