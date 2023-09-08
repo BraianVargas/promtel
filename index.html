@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
     </script>
+    <script src="./static/js/main.js"></script>
     <link rel="stylesheet" href="./static/css/navbar.css">
     <link rel="stylesheet" href="./static/css/App.css">
     <link rel="stylesheet" href="./static/css/about.css">
@@ -21,32 +22,39 @@
     <link rel="stylesheet" href="./static/css/timeline.css">
 
     <title>Promtel S.R.L</title>
+    <link rel="shortcut icon " href="./static/img/logo.png">
+    
 </head>
 
 <body>
+    <!-- NAVBAR -->
     <div>
-        <nav id='navbar' class="navbar navbar-expand-lg">
+        <nav id='navbar' class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                
                 <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+                    
                 </button>
+                <a class="logo navbar-brand d-block d-lg-none" href="/">
+                    <img alt='logo-promtel' src="./static/img/logo.png"> 
+                </a>
                 <div class="collapse navbar-collapse navlinks" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0 ">
                         <li class="nav-item">
                             <a class="links" aria-current="page" href='/'>Inicio </a> </li>
                         <li class="nav-item">
-                            <a class="links" aria-current="page" href='/'>Quienes somos</a> </li> 
-
+                            <a class="links" aria-current="page" href='#about'>Quienes somos</a> </li> 
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
                             <a class="logo navbar-brand" href="/">
                                 <img alt='logo-promtel' src="./static/img/logo.png"> 
                             </a>
-
-                            <li class="nav-item"> 
-                                <a class="links" href="#nuestro_trabajo"> Nuestro trabajo</a>
-                            </li>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="links" href="#nuestro_trabajo"> Nuestro trabajo</a>
+                        </li>
                         <li class="nav-item">
                             <a class="links" aria-current="page" href='/contacts'>Contacto </a>
                         </li>
@@ -55,19 +63,20 @@
             </div>
         </nav>
     </div>
+
     <!-- MAIN VIEW -->
     <div id="main-view" class="carousel slide">
         <div class="carousel-inner">
-            <div class="carousel-item active" >
+            <div class="carousel-item active">
             </div>
             <div class='carousel-caption'>
                 <svg>
-                    <text x="50%" y="20%" cy="50" dy="35" textAnchor="middle" color='white'>
+                    <text x="70px" y="70px" textAnchor="middle" color='white'>
                         PROMTEL S.R.L
                     </text>
                 </svg>
                 <h1>PROMTEL S.R.L</h1>
-                <p>
+                <p class="my-5">
                     Servicios electromecánicos, construcción, enlaces inalámbricos y más...
                 </p>
             </div>
@@ -87,10 +96,10 @@
 
     <!-- TIMELINE -->
     <div id="timeline" class="timeline-container">
-        <h1 class="clients-title text-center">Historia</h1>
-        <p class="text-center main-info my-2">Somos PROMTEL S.R.L, una empresa de capitales argentinos, dedicada a la instalación y mantenimiento de sistemas de redes, tarifación telefónica y soluciones IT, en la región de Cuyo y otras provincias de nuestro país.</p>
+        <h1 id="about" class="clients-title text-center">Historia</h1>
+        <p class="text-center main-info">Somos PROMTEL S.R.L, una empresa de capitales argentinos, dedicada a la instalación y mantenimiento de sistemas de redes, tarifación telefónica y soluciones IT, en la región de Cuyo y otras provincias de nuestro país.</p>
         
-        <div class="container main-info">
+        <div class="container timeline-info my-2">
             <ul>
                 <li>
                     <span></span>
@@ -169,92 +178,59 @@
     </div>
 
     <!-- CAROUSEL -->
-    <div class='mainDivCarousel' id="nuestro_trabajo">
-        <h2 id='carousel-title'> Nuestros Servicios </h2>
-        <div id='carouselContainer' class='carousel carousel-fade slide'  data-bs-ride="carousel">
-            <div class='carousel-inner'>
-                <div class='carousel-item active'>
-                    <div class='imgCarousel'>
-                        <div
-                            class='imgCarouselBackground'
-                            alt="Tecnología"
-                            style="
-                                background-image: url('./static/img/home/carousel/tecnologia.webp');
-                            "
-                        />
-                    </div>
-                    <div class='carousel-caption text-start'>
-                        <h1> Tecnología </h1>
-                        <p> SOLUCIONES TECNOLÓGICAS PARA EMPRESAS</p>
-                        <a href="/tecnologia">Ver más...</a>
-                    </div>
-                </div>
-                <div class='carousel-item'>
-                    <div class='imgCarousel'>
-                        <div
-                            class='imgCarouselBackground'
-                            alt="Iot"
-                            style="
-                                background-image: url('./static/img/home/carousel/iot.webp');
-                            "
-                        />
-                    </div>
-                    <div class='carousel-caption text-start'>
-                        <h1> IOT </h1>
-                        <p> INTERNET DE LAS COSAS APLICADO A TUS NECESIDADES </p>
-                        <a href="/iot">Ver más...</a>
-                    </div>
-                </div>
-                <div class='carousel-item'>
-                    <div class='imgCarousel'>
-                        <div
-                            class='imgCarouselBackground'
-                            alt="Iot"
-                            style="
-                                background-image: url('./static/img/home/carousel/construcciones.webp');
-                            "
-                        />
-                    </div>
-                    <div class='carousel-caption text-start'>
-                        <h1> Construcciones </h1>
-                        <p> OBRAS CIVILES Y CONSTRUCCIONES ELECTROMECÁNICAS. </p>
-                        <a href="/construcciones">Ver más...</a>
-                    </div>
-                </div>
-                <div class='carousel-item'>
-                    <div class='imgCarousel'>
-                        <div
-                            class='imgCarouselBackground'
-                            alt="FO"
-                            style="
-                                background-image: url('./static/img/home/carousel/fibra.webp');
-                            "
-                        />
-                    </div>
-                    <div class='carousel-caption text-start'>
-                        <h1> Fibra Óptica </h1>
-                        <p> CONEXION, SOLDADURA Y ENLACES INALAMBRICOS. </p>
-                        <a href="/fibra">Ver más...</a>
-                    </div>
+    <div id="nuestro_trabajo">
+        <div id="carouselContainer" class="carousel slide carousel-fade" data-bs-touch="false">
+            <div class="carousel-inner">
+            <div class="carousel-item active" >
+                <img src="./static/img/home/carousel/tecnologia.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption text-center">
+                    <h1>Tecnología</h1>
+                    <p>SOLUCIONES TECNOLÓGICAS PARA EMPRESAS</p>
+                    <a href="/tecnologia">Ver más...</a>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselContainer" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselContainer" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item" >
+                <img src="./static/img/home/carousel/iot.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption text-center">
+                    <h1>IOT</h1>
+                    <p>INTERNET DE LAS COSAS APLICADO A TUS NECESIDADES.</p>
+                    <a href="/iot">Ver más...</a>
+                </div>
+            </div>
+            <div class="carousel-item" >
+                <img src="./static/img/home/carousel/construcciones.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption text-center">
+                    <h1>Construcciones</h1>
+                    <p>OBRAS CIVILES Y CONSTRUCCIONES ELECTROMECÁNICAS.</p>
+                    <a href="/construcciones">Ver más...</a>
+                </div>
+            </div>
+            <div class="carousel-item" >
+                <img src="./static/img/home/carousel/fibra.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption text-center">
+                    <h1>Fibra óptica</h1>
+                    <p>CONEXION, SOLDADURA Y ENLACES INALAMBRICOS.</p>
+                    <a href="/fibraoptica">Ver más...</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselContainer" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselContainer" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
         </div>
     </div>
-    
+
     <!-- CLIENTES -->
     <div class='clientsContainer'>
-        <h1 class='clients-title'>Nuestros Clientes</h1>
+        <h1 class='clients-title text-center'>Nuestros Clientes</h1>
         <div class='banner-container'>
             <div class='banner1' style="background-image: url('./static/img/home/banner.png');"></div>
-            <div class='banner1' style="background-image: url('./static/img/home/banner2.png');"></div>
+            <div class='banner2' style="background-image: url('./static/img/home/banner2.png');"></div>
         </div>
     </div>
 

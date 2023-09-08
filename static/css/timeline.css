@@ -1,15 +1,19 @@
-.timeline-container {
+
+
+#timeline{
     margin-top: -120px;
 }
 
-.timeline-container .typography {
-    font-weight: 1000;
+#timeline>h1{
+    margin-top: 1em;
+    margin-bottom: 2.5em;
 }
 
 .main-info {
-    margin: auto;
+    margin-top: 7.4em;
     width: auto;
     max-width: 700px;
+    margin: auto;
 }
 
 
@@ -30,12 +34,12 @@
     height: 100%;
     position: absolute;
     border-left: 2px dashed #fff;
-    margin-left: 33.8%;
+    margin-left: 40%;
 }
 
 .container ul li {
     position: relative;
-    margin-left: 55%;
+    margin-left: 52.3%;
     width: 250px;
     background-color: rgb(3, 135, 175);
     padding: 14px;
@@ -123,13 +127,118 @@
 
 
 
-@media (max-width: 768px) {
-    .timeline-container .clients-title {
-        margin-bottom: 90px;
+@media (max-width: 750px) {
+    #timeline {
+        margin-top: -160px;
+    }
+    #timeline>h1{
+        padding-top: 2.5em;
+        padding-bottom: 1em;
     }
     
-    .container ul li>span {
-        left: -100px;
+    .main-info {
+        margin-top: 5.2em;
+        margin-bottom: 6em;
+        padding: 1em;
     }
+    
+    .container ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+    /* Lineas dashed */
+    .container ul:before {
+        position: absolute;
+        margin-left: 77px;
+    }
+    
+    .container ul li {
+        margin-left:  110px;
+        width: 60%;
+        background-color: rgb(3, 135, 175);
+        padding: 14px;
+        border-radius: 6px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
+    }
+    
+    .container ul li:not(:first-child) {
+        margin-top: 50px;
+    }
+    
+    /* lineas */
+    .container ul li>span {
+        width: 4px;
+        height: 100%;
+        background: #fff;
+        margin-left: 0%;
+        top: 0;
+        position: absolute;
+    }
+    
+    
+    /* circulos */
+    .container ul li>span:before,
+    .container ul li>span:after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        position: absolute;
+        background: #2e75bd;
+        left: -4.5px;
+        top: 0;
+    }
+    
+    .container ul li>span:after {
+        top: 100%;
+    }
+    
+    .container ul li>div {
+        margin-left: auto;
+    }
+    
+    .container ul div .title,
+    .container ul div .type {
+        font-weight: 700;
+        font-size: 12px;
+    }
+    .container ul div .type {
+        font-style: italic;
+    }
+    
+    .container ul div .info {
+        font-weight: 250;
+    }
+    
+    .container ul div>div {
+        margin-top: 5px;
+    }
+    
+    .container p.number {
+        font-weight: 750;
+        font-size: 20px;
+        position: absolute;
+        left: -100px;
+        top: -5px;
+    }
+    
+    .container span.number span {
+        position: absolute;
+        font-size: 10px;
+        left: -35px;
+        font-weight: bold;
+    }
+    
+    .container span.number span:first-child {
+        top: 0;
+    }
+    
+    .container span.number span:last-child {
+        top: 100%;
+    }
+    
+    
 
 }

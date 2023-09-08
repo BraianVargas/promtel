@@ -1,6 +1,8 @@
 .clientsContainer {
-    position: relative;
-    margin-top: -140px;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .clients-title {
@@ -16,7 +18,6 @@
     width: 800px;
     max-width: 1200px;
     top: 110px;
-    margin-top: 5%;
     margin-bottom: 10%;
     
     --b: 5px;   /* the thickness of the line */
@@ -35,8 +36,8 @@
 }
 
 .banner-container {
-    top: 100px;
-    height: 150px;
+    
+    height: 190px;
     background-size: contain;
 }
 
@@ -73,20 +74,19 @@
 
 @media (max-width: 600px) {
     .clientsContainer{
-        margin-top: -300px;
+        margin-top: -120px;
     }
     .clients-title{
-        top: 85px;
         font-size: 30px;
         min-width: 200px;
         width: 300px;
-        padding: 1em;
+        padding: .5em;
         animation: transition .1s infinite;
-        font-size: 30px;
         text-align: center;
     }
-    .clientsContainer .clients-title{
-        margin-bottom: 3em;
+    .clients-title{
+        margin-top: 2em;
+        margin-bottom: 4em;
     }
 
 }
