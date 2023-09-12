@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+    <script src="./static/js/main.js"></script>
+    <link rel="stylesheet" href="./static/css/navbar.css">
+    <link rel="stylesheet" href="./static/css/App.css">
+    <link rel="stylesheet" href="./static/css/carouselcontent.css">
+    <link rel="stylesheet" href="./static/css/footer.css">
+
+    <title>Promtel S.R.L</title>
+    <link rel="shortcut icon " href="./static/img/logo.png">
+    
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div>
+        <nav id='navbar' class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    
+                </button>
+                <a class="logo navbar-brand d-block d-lg-none" href="/">
+                    <img alt='logo-promtel' src="./static/img/logo.png"> 
+                </a>
+                <div class="collapse navbar-collapse navlinks" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="links" aria-current="page" href='/'>Inicio </a> </li>
+                        <li class="nav-item">
+                            <a class="links" aria-current="page" href='/index.html#about'>Quienes somos</a> </li> 
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="logo navbar-brand" href="/">
+                                <img alt='logo-promtel' src="./static/img/logo.png"> 
+                            </a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="links" href="/index.html#nuestro_trabajo"> Nuestro trabajo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="links" aria-current="page" href='/contacts'>Contacto </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="main-content container row">
+      <div class="content-container col-12 col-md-4 my-5">
+        <h1 class="my-4"> Tecnología </h1>
+        <section>
+          SomosSomos PROMTEL SRL, una empresa líder con más de una década de experiencia en redes y telecomunicaciones, IoT y construcciones civiles. Nuestra misión es facilitar la conectividad y mejorar la calidad de vida a través de soluciones innovadoras. Con más de 20 clientes satisfechos en la provincia, nos enorgullecemos de ser su socio preferido en el despliegue de tecnologías avanzadas. Nuestros valores fundamentales de innovación, calidad, integridad, colaboración y responsabilidad social nos guían en cada proyecto que emprendemos. Únase a nuestra historia de éxito y construyamos un futuro más conectado juntos.
+        </section>
+      </div>
+      <div class="carousel-container col-12 col-md-8 my-5">
+        <div class="carousel carousel-fade slide " id="carouselExample">
+          <div class="carousel-inner">
+            <div class="carousel-item active"><img src="./static/img/home/carousel/tecnologia/01.webp" alt=""></div>
+            <div class="carousel-item"><img src="./static/img/home/carousel/tecnologia/02.webp" alt=""></div>
+            <div class="carousel-item"><img src="./static/img/home/carousel/tecnologia/03.webp" alt=""></div>
+            <div class="carousel-item"><img src="./static/img/home/carousel/tecnologia/04.webp" alt=""></div>
+          </div>
+          <button type="button" class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button> 
+          <button type="button" class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class='footer'>
+      <div class='logo'>
+          <a href='/'>
+            <img  alt='logo-promtel' src='./static/img/logo.png'/>
+          </a>
+      </div>
+      <div class='social'>
+          <ul>
+              <li id='1' class='Facebook'>
+                  <a href="https://www.facebook.com/promtelsrl" target='_blank' rel="noreferrer" >
+                      <i class='bi bi-facebook' />
+                  </a>
+              </li>
+              <li id='1' class='Linkedin'>
+                  <a href="https://www.linkedin.com/feed/" target='_blank' rel="noreferrer" >
+                      <i class='bi bi-linkedin' />
+                  </a>
+              </li>
+              <li id='1' class='Instagram'>
+                  <a href="https://www.instagram.com/promtel.srl/" target='_blank' rel="noreferrer" >
+                      <i class='bi bi-instagram' />
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div class='buttons-extra'>
+          <a href='/'> Contacto </a>
+          <a href='/'> Trabaja con nosotros </a>
+      </div>
+  </div>
+
+
+</body>
+
+</html>
